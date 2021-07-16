@@ -22,4 +22,12 @@ public class Limit {
     public void setValue(int value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return "Limit{" +
+                "type='" + type + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }

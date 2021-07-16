@@ -32,12 +32,12 @@ public class Main {
                 products.stream().forEach(System.out::println);
             }
 
-//            if(input == 12){
-//                System.out.print("List of products that have minimum limit");
-//                List<Shop> shops = ShopMock.getListOfShop();
-//                List<Product> products = FunctionUtil.getALLProductsThatHaveMinLimit.apply(shops.get(0).getProducts(), "min");
-//                products.stream().forEach(System.out::println);
-//            }
+            if(input == 12){
+                System.out.print("List of products that have minimum limit");
+                List<Shop> shops = ShopMock.getListOfShop();
+                List<Product> products = FunctionUtil.getALLProductsThatHaveMinLimit.apply(shops.get(0).getProducts());
+                products.stream().forEach(System.out::println);
+            }
 
             if(input == 0){
                 System.out.println("goodbyeeee......");
