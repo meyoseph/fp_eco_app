@@ -6,7 +6,7 @@ public class Payment {
     private Double tax;
     private Double subTotal;
     private List<Product> products;
-    private List<Order> orders;
+    private Order orders;
 
     public Payment() {
     }
@@ -35,11 +35,11 @@ public class Payment {
         this.products = products;
     }
 
-    public List<Order> getOrders() {
+    public Order getOrders() {
         return orders;
     }
 
-    public void setOrders(List<Order> orders) {
+    public void setOrders(Order orders) {
         this.orders = orders;
     }
 }

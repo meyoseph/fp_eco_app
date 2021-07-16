@@ -1,9 +1,12 @@
 package beans;
 
+import java.util.List;
+
 public class Staff extends Role{
 
     private Staff manager;
     private Shop shop;
+    private List<Order> orders;
 
     public Staff(){}
 
