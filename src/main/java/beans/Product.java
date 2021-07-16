@@ -8,18 +8,9 @@ public class Product {
     private String productDescription;
     private List<Limit> limits;
     private Tag tag;
-    private List<Discount> discount;
+    private List<Discount> discounts;
 
     public Product() {
-    }
-
-    public Product(String productName, String productType, String productDescription, List<Limit> lists, Tag tag, List<Discount> discount) {
-        this.productName = productName;
-        this.productType = productType;
-        this.productDescription = productDescription;
-        this.limits = lists;
-        this.tag = tag;
-        this.discount = discount;
     }
 
     public String getProductName() {
@@ -46,11 +37,11 @@ public class Product {
         this.productDescription = productDescription;
     }
 
-    public List<Limit> getLists() {
+    public List<Limit> getLimits() {
         return limits;
     }
 
-    public void setLists(List<Limit> lists) {
+    public void setLimits(List<Limit> lists) {
         this.limits = lists;
     }
 
@@ -62,11 +53,11 @@ public class Product {
         this.tag = tag;
     }
 
-    public List<Discount> getDiscount() {
-        return discount;
+    public List<Discount> getDiscounts() {
+        return discounts;
     }
 
-    public void setDiscount(List<Discount> discount) {
-        this.discount = discount;
+    public void setDiscounts(List<Discount> discounts) {
+        this.discounts = discounts;
     }
 }

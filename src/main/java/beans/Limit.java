@@ -1,15 +1,19 @@
 package beans;
 
 public class Limit {
+    private Product product;
     private String type;
     private int value;
 
     public Limit() {
     }
 
-    public Limit(String type, int value) {
-        this.type = type;
-        this.value = value;
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public String getType() {
