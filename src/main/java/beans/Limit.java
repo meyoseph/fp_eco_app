@@ -7,6 +7,11 @@ public class Limit {
     public Limit() {
     }
 
+    public Limit(String type, int value) {
+        this.type = type;
+        this.value = value;
+    }
+
     public String getType() {
         return type;
     }

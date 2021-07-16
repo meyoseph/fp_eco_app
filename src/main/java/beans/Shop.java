@@ -10,6 +10,12 @@ public class Shop {
     public Shop() {
     }
 
+    public Shop(String name, List<Staff> staffs, List<Product> products) {
+        this.name = name;
+        this.staffs = staffs;
+        this.products = products;
+    }
+
     public String getName() {
         return name;
     }

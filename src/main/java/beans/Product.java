@@ -6,11 +6,20 @@ public class Product {
     private String productName;
     private String productType;
     private String productDescription;
-    private List<Limit> lists;
+    private List<Limit> limits;
     private Tag tag;
     private List<Discount> discount;
 
     public Product() {
+    }
+
+    public Product(String productName, String productType, String productDescription, List<Limit> lists, Tag tag, List<Discount> discount) {
+        this.productName = productName;
+        this.productType = productType;
+        this.productDescription = productDescription;
+        this.limits = lists;
+        this.tag = tag;
+        this.discount = discount;
     }
 
     public String getProductName() {
@@ -38,11 +47,11 @@ public class Product {
     }
 
     public List<Limit> getLists() {
-        return lists;
+        return limits;
     }
 
     public void setLists(List<Limit> lists) {
-        this.lists = lists;
+        this.limits = lists;
     }
 
     public Tag getTag() {
