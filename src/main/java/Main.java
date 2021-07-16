@@ -1,11 +1,14 @@
 import beans.Limit;
 import beans.Product;
 import beans.Shop;
+import mock.CustomerMock;
 import mock.ShopMock;
 import util.FunctionUtil;
+import util.FunctionUtil2;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +19,9 @@ public class Main {
             System.out.println("Press 1 to get list of product names");
             System.out.println("Press 7 to get list of products That have \"shoes\" tag");
             System.out.println("Press 12 to get list of products That have \"min\" limit value");
+            System.out.println("Press 3 to get list of Top Paying Customers Within A Year and Discounts");
+            System.out.println("Press 4 to get list of Top Taxed Product in a specific year");
+            System.out.println("Press 5 to get list of Top Tax Paying customers within in a specific year");
             System.out.println("Press 0 to exit");
             int input = scanner.nextInt();
             if(input == 1){
@@ -37,6 +43,30 @@ public class Main {
                 List<Shop> shops = ShopMock.getListOfShop();
                 List<Product> products = FunctionUtil.getALLProductsThatHaveMinLimit.apply(shops.get(0).getProducts());
                 products.stream().forEach(System.out::println);
+            }
+
+            if(input == 3){
+                System.out.print("List of Top 5 Paying Customers Within 2021 while having the most Discounts are");
+                CustomerMock cM = new CustomerMock();
+                System.out.println(" ");
+                System.out.println(" ->" + FunctionUtil2.topKPayingCustomersOnKDiscounts.apply(cM.getCustomers().stream().map(customer -> customer.getPerson()).collect(Collectors.toList()), 2021L, 0d, 5L));
+
+            }
+
+            if(input == 4){
+                System.out.print("List of Top 4 Taxed Product of 2021 are: ");
+                CustomerMock cM = new CustomerMock();
+                System.out.println(" ");
+                System.out.println(" ->" + FunctionUtil2.topKMostTaxedProductOnKYear.apply(cM.getYamShopping(), 2021L, 4L));
+
+            }
+
+            if(input == 5){
+                System.out.print("List of Top 4 Tax Paying customers of 2021 are: ");
+                CustomerMock cM = new CustomerMock();
+                System.out.println(" ");
+                System.out.println(" ->" + FunctionUtil2.topTaxPayingCustomerOnKYear.apply(cM.getYamShopping(), 2021L, 4L));
+
             }
 
             if(input == 0){
