@@ -4,7 +4,6 @@ import beans.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.PrimitiveIterator;
 
 public class ShopMock {
     public static List<Shop> getListOfShop(){
@@ -70,58 +69,58 @@ public class ShopMock {
         product1.setDiscounts(discounts);
 
         Product product2 = new Product();
-        product1.setProductName("Aldo");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product2.setProductName("Aldo");
+        product2.setLimits(limits);
+        product2.setTag(tag2);
+        product2.setDiscounts(discounts);
 
         Product product3 = new Product();
-        product1.setProductName("Adidas outdoor");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product3.setProductName("Adidas outdoor");
+        product3.setLimits(limits);
+        product3.setTag(tag2);
+        product3.setDiscounts(discounts);
 
         Product product4 = new Product();
-        product1.setProductName("Brooks");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product4.setProductName("Brooks");
+        product4.setLimits(limits);
+        product4.setTag(tag2);
+        product4.setDiscounts(discounts);
 
         Product product5 = new Product();
-        product1.setProductName("Bull");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product5.setProductName("Bull");
+        product5.setLimits(limits);
+        product5.setTag(tag2);
+        product5.setDiscounts(discounts);
 
         Product product6 = new Product();
-        product1.setProductName("Bull");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product6.setProductName("Bull");
+        product6.setLimits(limits);
+        product6.setTag(tag2);
+        product6.setDiscounts(discounts);
 
         Product product7 = new Product();
-        product1.setProductName("Carters");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product7.setProductName("Carters");
+        product7.setLimits(limits);
+        product7.setTag(tag2);
+        product7.setDiscounts(discounts);
 
         Product product8 = new Product();
-        product1.setProductName("Disney shoes");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product8.setProductName("Disney shoes");
+        product8.setLimits(limits);
+        product8.setTag(tag2);
+        product8.setDiscounts(discounts);
 
         Product product9 = new Product();
-        product1.setProductName("Dockers");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product9.setProductName("Dockers");
+        product9.setLimits(limits);
+        product9.setTag(tag2);
+        product9.setDiscounts(discounts);
 
         Product product10 = new Product();
-        product1.setProductName("Dingo");
-        product1.setLimits(limits);
-        product1.setTag(tag2);
-        product1.setDiscounts(discounts);
+        product10.setProductName("Dingo");
+        product10.setLimits(limits);
+        product10.setTag(tag2);
+        product10.setDiscounts(discounts);
 
         //populate shops
         products.add(product1);
