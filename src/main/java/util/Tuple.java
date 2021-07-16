@@ -1,10 +1,15 @@
 package util;
 
+import java.util.List;
+
 public class Tuple<K, V> {
     private K key;
     private V value;
 
     public Tuple() {
+    }
+
+    public Tuple(List<K> key, V value) {
     }
 
     public K getKey() {
