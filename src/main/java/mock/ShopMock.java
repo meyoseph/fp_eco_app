@@ -52,10 +52,10 @@ public class ShopMock {
         // discount
         Discount discount1 = new Discount();
         discount1.setDiscountType("blackfriday");
-        discount1.getDiscountPercent(5.0);
+        discount1.setDiscountPercent(5.0);
         Discount discount2 = new Discount();
         discount2.setDiscountType("cybermonday");
-        discount2.getDiscountPercent(2.0);
+        discount2.setDiscountPercent(2.0);
 
         // populate discounts
         discounts.add(discount1);

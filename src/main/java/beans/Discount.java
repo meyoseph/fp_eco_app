@@ -19,7 +19,7 @@ public class Discount {
         this.discountType = discountType;
     }
 
-    public Double getDiscountPercent(double v) {
+    public Double getDiscountPercent() {
         return discountPercent;
     }
 

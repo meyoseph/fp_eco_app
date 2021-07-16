@@ -5,7 +5,6 @@ import java.util.List;
 public class Staff extends Role{
 
     private Staff manager;
-    private Shop shop;
     private List<Order> orders;
 
     public Staff(){}
@@ -18,11 +17,11 @@ public class Staff extends Role{
         this.manager = manager;
     }
 
-    public Shop getShop() {
-        return shop;
+    public List<Order> getOrders() {
+        return orders;
     }
 
-    public void setShop(Shop shop) {
-        this.shop = shop;
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }

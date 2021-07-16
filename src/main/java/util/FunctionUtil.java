@@ -10,6 +10,21 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public abstract class FunctionUtil {
+
+    public static Function<List<Person>, List<Customer>> fromPersonsToCustomers = people ->
+            people.stream()
+                    .flatMap(person -> person.getRoles().stream())
+                    .filter(role -> role instanceof Customer)
+                    .map(role -> (Customer) role)
+                    .collect(Collectors.toList());
+
+    public static Function<List<Person>, List<Staff>> fromPersonsToStaff = people ->
+            people.stream()
+                    .flatMap(person -> person.getRoles().stream())
+                    .filter(role -> role instanceof Staff)
+                    .map(role -> (Staff) role)
+                    .collect(Collectors.toList());
+
     public static Function<Shop, List<String>> getALLProductName = shop -> shop.getProducts().stream()
             .map(product -> product.getProductName()).collect(Collectors.toList());
 

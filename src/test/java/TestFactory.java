@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public abstract class TestFactory {
 
 
-    static public Shop createShop(String name, List<Product> products){
+    static public Shop createShop(String name, List<Product> products, List<Staff> staffs){
         Shop shop = new Shop();
         shop.setName(name);
         shop.setProducts(products);
@@ -19,7 +19,7 @@ public abstract class TestFactory {
     }
 
 
-    static public Staff createStaff(String firstName, String lastName, Shop shop){
+    static public Staff createStaff(String firstName, String lastName){
         Person person = new Person();
         person.setFirstName(firstName);
         person.setLastName(lastName);
