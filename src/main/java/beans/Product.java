@@ -9,6 +9,7 @@ public class Product {
     private List<Limit> limits;
     private Tag tag;
     private List<Discount> discounts;
+    private List<Payment> payments;
 
     public Product() {
     }
@@ -59,5 +60,13 @@ public class Product {
 
     public void setDiscounts(List<Discount> discounts) {
         this.discounts = discounts;
+    }
+
+    public List<Payment> getPayments() {
+        return payments;
+    }
+
+    public void setPayments(List<Payment> payments) {
+        this.payments = payments;
     }
 }

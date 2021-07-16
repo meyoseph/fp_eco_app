@@ -1,10 +1,12 @@
 package beans;
 
+import java.util.List;
+
 public class Payment {
     private Double tax;
     private Double subTotal;
-    private Product product;
-    private Order order;
+    private List<Product> products;
+    private List<Order> orders;
 
     public Payment() {
     }
@@ -23,5 +25,21 @@ public class Payment {
 
     public void setSubTotal(Double subTotal) {
         this.subTotal = subTotal;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }
