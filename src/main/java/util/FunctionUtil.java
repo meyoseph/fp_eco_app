@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public abstract class FunctionUtil {
 }
