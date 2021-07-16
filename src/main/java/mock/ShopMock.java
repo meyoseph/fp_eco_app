@@ -24,21 +24,21 @@ public class ShopMock {
         Staff staff10 = new Staff();
 
         // product limits
-        Limit limitMinValueOf2 = new Limit();
-        limitMinValueOf2.setValue(2);
-        limitMinValueOf2.setType("min");
-
-        Limit limitMaxValueOf12 = new Limit();
-        limitMaxValueOf12.setValue(12);
-        limitMaxValueOf12.setType("max");
-        Limit limitMultipleOf2 = new Limit();
-        limitMultipleOf2.setValue(2);
-        limitMaxValueOf12.setType("multiple");
-
-        // populate limits list
-        limits.add(limitMinValueOf2);
-        limits.add(limitMaxValueOf12);
-        limits.add(limitMultipleOf2);
+//        Limit limitMinValueOf2 = new Limit();
+//        limitMinValueOf2.setValue(2);
+//        limitMinValueOf2.setType("min");
+//
+//        Limit limitMaxValueOf12 = new Limit();
+//        limitMaxValueOf12.setValue(12);
+//        limitMaxValueOf12.setType("max");
+//        Limit limitMultipleOf2 = new Limit();
+//        limitMultipleOf2.setValue(2);
+//        limitMaxValueOf12.setType("multiple");
+//
+//        // populate limits list
+//        limits.add(limitMinValueOf2);
+//        limits.add(limitMaxValueOf12);
+//        limits.add(limitMultipleOf2);
 
 
         // tags
@@ -67,6 +67,12 @@ public class ShopMock {
         product1.setLimits(limits);
         product1.setTag(tag2);
         product1.setDiscounts(discounts);
+
+        // min 2 limit
+        Limit product1MinLimit = new Limit();
+        product1MinLimit.setType("min");
+        product1MinLimit.setValue(2);
+        limits.add(product1MinLimit);
 
         Product product2 = new Product();
         product2.setProductName("Aldo");
@@ -133,8 +139,6 @@ public class ShopMock {
         products.add(product8);
         products.add(product9);
         products.add(product10);
-
-
         //populate staffs
         staffs.add(staff1);
 

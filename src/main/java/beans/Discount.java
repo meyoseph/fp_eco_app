@@ -34,4 +34,6 @@ public class Discount {
     public void setMinItem(int minItem) {
         this.minItem = minItem;
     }
+
+
 }

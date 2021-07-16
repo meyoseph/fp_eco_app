@@ -1,3 +1,5 @@
+import beans.Limit;
+import beans.Product;
 import beans.Shop;
 import mock.ShopMock;
 import util.FunctionUtil;
@@ -11,15 +13,32 @@ public class Main {
         while(true){
             System.out.println("Instructions:");
             System.out.println("-----------------------------");
-            System.out.println("Press 1 to get list lof product names");
+            System.out.println("Press 1 to get list of product names");
+            System.out.println("Press 7 to get list of products That have \"shoes\" tag");
+            System.out.println("Press 12 to get list of products That have \"min\" limit value");
             System.out.println("Press 0 to exit");
             int input = scanner.nextInt();
             if(input == 1){
-                System.out.println("print list of product names");
+                System.out.println("List of product names");
                 List<Shop> shops = ShopMock.getListOfShop();
                 List<String> names = FunctionUtil.getALLProductName.apply(shops.get(0));
                 names.stream().forEach(System.out::println);
             }
+
+            if(input == 7){
+                System.out.print("List of products which have \"shoes\" tag");
+                List<Shop> shops = ShopMock.getListOfShop();
+                List<Product> products = FunctionUtil.getProductListByTag.apply(shops.get(0), "shoes");
+                products.stream().forEach(System.out::println);
+            }
+
+//            if(input == 12){
+//                System.out.print("List of products that have minimum limit");
+//                List<Shop> shops = ShopMock.getListOfShop();
+//                List<Product> products = FunctionUtil.getALLProductsThatHaveMinLimit.apply(shops.get(0).getProducts(), "min");
+//                products.stream().forEach(System.out::println);
+//            }
+
             if(input == 0){
                 System.out.println("goodbyeeee......");
                 break;
