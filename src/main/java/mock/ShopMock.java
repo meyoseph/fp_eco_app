@@ -73,72 +73,79 @@ public class ShopMock {
         product1MinLimit.setType("min");
         product1MinLimit.setValue(2);
         limits.add(product1MinLimit);
+        //product1MinLimit.setProduct(product1);
+
+        // max 12 limit
+        Limit product2MaxLimit = new Limit();
+        product2MaxLimit.setValue(12);
+        product2MaxLimit.setType("max");
+        limits.add(product2MaxLimit);
 
         Product product2 = new Product();
         product2.setProductName("Aldo");
-        product2.setLimits(limits);
+       // product2.setLimits(limits);
         product2.setTag(tag2);
         product2.setDiscounts(discounts);
 
         Product product3 = new Product();
         product3.setProductName("Adidas outdoor");
-        product3.setLimits(limits);
+        //product3.setLimits(limits);
         product3.setTag(tag2);
         product3.setDiscounts(discounts);
 
         Product product4 = new Product();
         product4.setProductName("Brooks");
-        product4.setLimits(limits);
+        //product4.setLimits(limits);
         product4.setTag(tag2);
         product4.setDiscounts(discounts);
 
         Product product5 = new Product();
         product5.setProductName("Bull");
-        product5.setLimits(limits);
+        //product5.setLimits(limits);
         product5.setTag(tag2);
         product5.setDiscounts(discounts);
 
         Product product6 = new Product();
         product6.setProductName("Bull");
-        product6.setLimits(limits);
+       // product6.setLimits(limits);
         product6.setTag(tag2);
         product6.setDiscounts(discounts);
 
         Product product7 = new Product();
         product7.setProductName("Carters");
-        product7.setLimits(limits);
+        //product7.setLimits(limits);
         product7.setTag(tag2);
         product7.setDiscounts(discounts);
 
         Product product8 = new Product();
         product8.setProductName("Disney shoes");
-        product8.setLimits(limits);
+        //product8.setLimits(limits);
         product8.setTag(tag2);
         product8.setDiscounts(discounts);
 
         Product product9 = new Product();
         product9.setProductName("Dockers");
-        product9.setLimits(limits);
+        //product9.setLimits(limits);
         product9.setTag(tag2);
         product9.setDiscounts(discounts);
 
         Product product10 = new Product();
         product10.setProductName("Dingo");
-        product10.setLimits(limits);
+        //product10.setLimits(limits);
         product10.setTag(tag2);
         product10.setDiscounts(discounts);
 
         //populate shops
         products.add(product1);
-        products.add(product2);
-        products.add(product3);
-        products.add(product4);
-        products.add(product5);
-        products.add(product6);
-        products.add(product7);
-        products.add(product8);
-        products.add(product9);
-        products.add(product10);
+//        products.add(product2);
+//        products.add(product3);
+//        products.add(product4);
+//        products.add(product5);
+//        products.add(product6);
+//        products.add(product7);
+//        products.add(product8);
+//        products.add(product9);
+//        products.add(product10);
         //populate staffs
         staffs.add(staff1);
 
