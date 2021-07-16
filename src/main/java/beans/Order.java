@@ -1,10 +1,12 @@
 package beans;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Order {
     private LocalDateTime dateTime;
     private Payment payment;
+    private List<Staff> staff;
 
     public Order() {
     }

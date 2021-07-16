@@ -60,4 +60,5 @@ public class Product {
     public void setDiscounts(List<Discount> discounts) {
         this.discounts = discounts;
     }
+
 }
